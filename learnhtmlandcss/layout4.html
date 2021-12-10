@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout4.css">
+</head>
+<body>
+    <main>
+        <header id="main-header">Header <button type="button" id="btnMenu">:::</button> </header>
+        <div class="main-container-wrapper">
+            <aside class="main-container-child-aside-container">
+                LeftSide
+            </aside>
+            <div class="main-container-child-right-container">Right Side <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore maxime et quod ipsum nostrum facilis magni fugiat quia? Vel cum id fuga voluptas tempore adipisci architecto debitis. Tenetur, adipisci.</p>
+                <div class="child-box-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                </div>
+            </div>
+        </div>
+        <footer id="main-footer">
+            footer
+        </footer>
+    </main>
+</body>
+<script>
+    var btntoggle=document.querySelector('#btnMenu');
+    var asideContainer=document.querySelector('.main-container-child-aside-container');
+    console.log(asideContainer);
+    btntoggle.addEventListener('click',(e)=>{
+        if(asideContainer.classList.contains('add'))
+            asideContainer.classList.remove('add');
+        else
+            asideContainer.classList.add('add');
+    });
+</script>
+</html>

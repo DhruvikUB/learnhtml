@@ -1,0 +1,29 @@
+*,*::after,*::before
+{
+    box-sizing: border-box;
+}
+body,html{
+   margin: 0px;
+   padding: 0px;
+}
+
+.main-container-wrapper
+{
+    margin: 20px;
+    background-color: dodgerblue;
+    display: flex;
+    height: 150px;
+    align-items: center;
+   
+}
+.main-child-box-div
+{
+    margin: 10px;
+    width: 100px;
+    font-size: 50px;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+    color: darkorange;
+   
+}

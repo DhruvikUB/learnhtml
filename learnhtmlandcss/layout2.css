@@ -1,0 +1,37 @@
+*,*:after,*:before
+{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.main-container-wrapper{
+    background-color: whitesmoke;
+    display: flex;
+    margin: 5px;
+    border: tomato solid 2px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+}
+.main-container-child{flex: 50%;}
+.main-container-child-left
+{
+    flex: 50%;
+    background-color: yellowgreen;
+    border-right: steelblue solid 1px;
+}
+.main-container-child-right
+{
+    flex: 50%;
+    background-color: yellowgreen;
+    border-right: steelblue solid 1px;
+}
+
+@media(max-width: 800px)
+{
+    .main-container-child{
+        flex: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html,body{
+ 
+   
+    margin: 0px;
+    height: 0px;
+    
+}
+main{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-headar
+{
+    width: 100%;
+    height: 10vh;
+    background-color: slategrey;
+    flex-shrink: 0;
+    top: 0px;
+}
+#main-footer{
+    width: 100%;
+    height: 10vh;
+    background-color: slategrey;
+    bottom: 0px;
+}
+
+.main-container-wrapper{
+    background-color: whitesmoke;
+    display: flex;
+    width: 100%;
+    flex-grow: 0;
+    position: relative;
+}
+
+.main-container-wrapper .main-aside-containeritem
+{
+    width:200px ;
+    background-color: darkgray;
+    position:absolute;
+}
+
+.main-container-wrapper .main-detail-containeritem
+{
+    width: 100%;
+    
+}
+@media only screen and (min-width< 550) {
+  .main-aside-containeritem
+    {
+       left:-250px;
+    }
+}
